@@ -16,8 +16,14 @@ const AddCategory = ({ setCategory }) => {
             <details>
                 <summary >Search by category</summary>
                 <div className="searchForm">
-                    <input className="inputSearch" value={newcategory} type="text" name="newcategory" onChange={($event) => setNewcategory($event.target.value)} ></input>
+                    <div className="inputSearch">
+                    <input  value={newcategory} type="text" name="newcategory" onChange={($event) => setNewcategory($event.target.value)} ></input>
+                    </div>
+                    <div className="buttonSearch">
                     <button className="buttonSearch" onClick={() => handleAdd(newcategory)}>Search</button>
+                    </div>
+                    
+
                 </div>
             </details>
         </div>
